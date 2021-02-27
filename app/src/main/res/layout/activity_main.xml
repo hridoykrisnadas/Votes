@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#FFF496"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:text="Enter Total Voter below the Box"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTexttotalVoterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:background="@drawable/back2"
+        android:textSize="20dp"
+        android:padding="25dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal">
+    </EditText>
+
+    <Button
+        android:id="@+id/startbtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="Start Now"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:padding="15dp">
+
+    </Button>
+
+</LinearLayout>
