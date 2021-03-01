@@ -154,7 +154,8 @@ public class Votes extends AppCompatActivity {
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\n"+resultText);
+                    alertDialog.setMessage("Congratulations!\n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
+                            + DhanerSeshSum);
                     alertDialog.setIcon(R.drawable.dhan);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -175,7 +176,8 @@ public class Votes extends AppCompatActivity {
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\n"+resultText);
+                    alertDialog.setMessage("Congratulations!\n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
+                            + DhanerSeshSum);
                     alertDialog.setIcon(R.drawable.nouka);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -186,7 +188,6 @@ public class Votes extends AppCompatActivity {
                     });
                     AlertDialog alert = alertDialog.create();
 
-
                     alert.show();
 
                 }else if (DhanerSeshSum == NoukaSum) {
@@ -194,7 +195,8 @@ public class Votes extends AppCompatActivity {
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\nThe Result of the vote is: \n"+resultText);
+                    alertDialog.setMessage("Congratulations!\nThe Result of the vote is: \n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
+                            + DhanerSeshSum);
                     alertDialog.setIcon(R.drawable.ic_baseline_warning_24);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -225,11 +227,6 @@ public class Votes extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
 
     }
 }
