@@ -52,6 +52,8 @@ public class Votes extends AppCompatActivity {
                 DhanerSesh.setVisibility(View.VISIBLE);
                 Nouka.setVisibility(View.VISIBLE);
                 resultTextView.setVisibility(View.INVISIBLE);
+                Nouka.setText("Nouka");
+                DhanerSesh.setText("Dhaner Sesh");
 
 
                 Nouka.setOnClickListener(new View.OnClickListener() {
@@ -100,9 +102,7 @@ public class Votes extends AppCompatActivity {
                         EndVoterButton.setVisibility(View.VISIBLE);
                         CheckResultButton.setVisibility(View.VISIBLE);
                         DhanerSesh.setVisibility(View.INVISIBLE);
-                        DhanerSesh.setText("Dhaner Sesh");
                         Nouka.setVisibility(View.INVISIBLE);
-                        Nouka.setText("Nouka");
                         VoteDoneButton.setVisibility(View.INVISIBLE);
 
 
