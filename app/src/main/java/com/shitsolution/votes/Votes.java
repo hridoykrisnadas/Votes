@@ -146,9 +146,6 @@ public class Votes extends AppCompatActivity {
 
                 resultTextView.setText(finalResult + "\nResult: " + resultText);
 
-                resultTextView.setVisibility(View.VISIBLE);
-
-
                 if (DhanerSeshSum > NoukaSum) {
 
                     alertDialog = new AlertDialog.Builder(Votes.this);
@@ -160,6 +157,7 @@ public class Votes extends AppCompatActivity {
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            resultTextView.setVisibility(View.VISIBLE);
 
                         }
                     });
@@ -181,6 +179,7 @@ public class Votes extends AppCompatActivity {
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            resultTextView.setVisibility(View.VISIBLE);
 
                         }
                     });
@@ -199,6 +198,7 @@ public class Votes extends AppCompatActivity {
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            resultTextView.setVisibility(View.VISIBLE);
 
                         }
                     });
@@ -220,7 +220,7 @@ public class Votes extends AppCompatActivity {
 
                 String finalResult = "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
                         + DhanerSeshSum;
-                resultTextView.setVisibility(View.VISIBLE);
+
                 resultTextView.setText(finalResult);
 
                 alertDialog = new AlertDialog.Builder(Votes.this);
@@ -232,7 +232,7 @@ public class Votes extends AppCompatActivity {
                 alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        resultTextView.setVisibility(View.VISIBLE);
                     }
                 });
                 AlertDialog alert = alertDialog.create();
@@ -241,8 +241,11 @@ public class Votes extends AppCompatActivity {
                 alert.show();
 
 
+
             }
         });
+
+
 
     }
 }
