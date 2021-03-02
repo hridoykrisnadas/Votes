@@ -134,28 +134,27 @@ public class Votes extends AppCompatActivity {
                 else if (DhanerSeshSum < NoukaSum) {
 
                     resultText = "Nouka is Win";
-                }else if (DhanerSeshSum == NoukaSum) {
+                } else if (DhanerSeshSum == NoukaSum) {
 
                     resultText = "Draw";
-                }
-
-                else{
+                } else {
                     resultText = "Error!";
                 }
 
-                resultTextView.setText("Total Voter: "+TotalV+ "\nTotal Poll: "+poll+"\nNouka: "+NoukaSum+"\nDhaner Sesh: "
-                        +DhanerSeshSum+"\nResult: "+resultText);
+                String finalResult = "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
+                        + DhanerSeshSum;
+
+                resultTextView.setText(finalResult + "\nResult: " + resultText);
 
                 resultTextView.setVisibility(View.VISIBLE);
 
 
-                if (DhanerSeshSum>NoukaSum) {
+                if (DhanerSeshSum > NoukaSum) {
 
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
-                            + DhanerSeshSum);
+                    alertDialog.setMessage("Congratulations!\n" + resultText + "\n" + finalResult);
                     alertDialog.setIcon(R.drawable.dhan);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -176,8 +175,7 @@ public class Votes extends AppCompatActivity {
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
-                            + DhanerSeshSum);
+                    alertDialog.setMessage("Congratulations!\n" + resultText + "\n" + finalResult);
                     alertDialog.setIcon(R.drawable.nouka);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -195,8 +193,7 @@ public class Votes extends AppCompatActivity {
                     alertDialog = new AlertDialog.Builder(Votes.this);
 
                     alertDialog.setTitle("Result!");
-                    alertDialog.setMessage("Congratulations!\nThe Result of the vote is: \n" + resultText + "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
-                            + DhanerSeshSum);
+                    alertDialog.setMessage("Congratulations!\nThe Result of the vote is: \n" + resultText + "\n" + finalResult);
                     alertDialog.setIcon(R.drawable.ic_baseline_warning_24);
                     alertDialog.setCancelable(false);
                     alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
@@ -221,9 +218,28 @@ public class Votes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                String finalResult = "Total Voter: " + TotalV + "\nTotal Poll: " + poll + "\nNouka: " + NoukaSum + "\nDhaner Sesh: "
+                        + DhanerSeshSum;
                 resultTextView.setVisibility(View.VISIBLE);
-                resultTextView.setText("Total Voter: "+TotalV+ "\nTotal Poll: "+poll+"\nNouka: "+NoukaSum+"\nDhaner Sesh: "
-                        +DhanerSeshSum);
+                resultTextView.setText(finalResult);
+
+                alertDialog = new AlertDialog.Builder(Votes.this);
+
+                alertDialog.setTitle("Check Result!");
+                alertDialog.setMessage("The vote is running..... \n" + finalResult);
+                alertDialog.setIcon(R.drawable.ic_baseline_warning_24);
+                alertDialog.setCancelable(false);
+                alertDialog.setPositiveButton("Thank You", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                AlertDialog alert = alertDialog.create();
+
+
+                alert.show();
+
 
             }
         });
