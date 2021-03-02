@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Voter_Verify"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#FFF8BA"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Voter/ NID/ Serial No: "
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:textColorHint="#403E3E"
+        android:background="@drawable/back2">
+    </EditText>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Now"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#2A872E"
+        android:padding="20dp">
+    </Button>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:src="@drawable/hkd"
+        android:visibility="visible">
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Hridoy Krisna Das"
+        android:visibility="visible">
+    </TextView>
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm &amp; Permit to vote"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#D64213"
+        android:padding="20dp">
+    </Button>
+
+</LinearLayout>

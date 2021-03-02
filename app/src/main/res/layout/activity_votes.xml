@@ -137,39 +137,38 @@
 
         <Button
             android:id="@+id/noukaId"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nouka"
-            android:visibility="invisible"
-            android:drawableRight="@drawable/nouka"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:padding="15dp"
-            android:backgroundTint="#03A9F4"
             android:layout_margin="5dp"
-            android:textAllCaps="false">
+            android:layout_weight="1"
+            android:backgroundTint="#03A9F4"
+            android:drawableRight="@drawable/nouka"
+            android:padding="15dp"
+            android:text="Nouka"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="visible">
 
         </Button>
 
         <Button
             android:id="@+id/dhaner_seshID"
-            android:layout_weight="1"
-            android:backgroundTint="#FFEB3B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dhaner Sesh"
-            android:visibility="invisible"
-            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFEB3B"
             android:drawableRight="@drawable/dhan"
-            android:textSize="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
             android:paddingLeft="0dp"
+            android:paddingTop="15dp"
             android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:text="Dhaner Sesh"
             android:textAllCaps="false"
-            android:layout_margin="5dp">
-        </Button>
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="visible"></Button>
 
     </LinearLayout>
 
@@ -181,18 +180,18 @@
 
         <Button
             android:id="@+id/voteDoneId"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#95EA33"
+            android:padding="15dp"
             android:text="Vote Done"
-            android:textStyle="bold"
+            android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:padding="15dp"
-            android:visibility="invisible"
-            android:backgroundTint="#FFC107"
-            android:layout_margin="5dp"
-            android:textAllCaps="false">
+            android:textStyle="bold"
+            android:visibility="visible">
 
         </Button>
     </LinearLayout>
@@ -223,7 +222,7 @@
             android:textIsSelectable="true"
             android:textSize="10pt"
             android:textStyle="bold"
-            android:visibility="invisible"
+            android:visibility="visible"
             tools:ignore="RtlCompat"></TextView>
     </RelativeLayout>
 

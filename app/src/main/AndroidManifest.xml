@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Votes">
-        <activity android:name="com.shitsolution.votes.Votes"></activity>
-        <activity android:name="com.shitsolution.votes.MainActivity">
+        <activity android:name=".Voter_Verify"></activity>
+        <activity android:name=".Votes" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
